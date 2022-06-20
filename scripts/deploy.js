@@ -1,4 +1,4 @@
-const { ethers } = require("ethers");
+const { ethers } = require("hardhat");
 
 async function main() {
 	const SimpleStorageFactory = await ethers.getContractFactory(
