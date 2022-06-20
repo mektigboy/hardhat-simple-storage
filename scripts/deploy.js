@@ -10,6 +10,8 @@ async function main() {
 	const simpleStorage = await SimpleStorageFactory.deploy();
 	
 	await simpleStorage.deployed();
+
+	console.log(`Deployed contract to: ${simpleStorage.address}`);
 };
 
 main()
