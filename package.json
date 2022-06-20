@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/mektigboy/hardhat-simple-storage.git",
   "author": "mektigboy",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.9"
+  }
 }
