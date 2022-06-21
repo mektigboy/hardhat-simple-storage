@@ -10,12 +10,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
+const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL
 
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
 module.exports = {
   defaultNetwork: "hardhat",
   networks: {
