@@ -15,7 +15,7 @@ async function main() {
 };
 
 async function verify(contractAddress, args) {
-	
+	console.log("Veryfing contract...");
 }
 
 main()
