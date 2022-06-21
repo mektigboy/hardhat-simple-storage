@@ -1,4 +1,4 @@
-const { ethers } = require("hardhat");
+const { ethers, run } = require("hardhat");
 
 async function main() {
 	const SimpleStorageFactory = await ethers.getContractFactory(
@@ -16,7 +16,20 @@ async function main() {
 
 async function verify(contractAddress, args) {
 	console.log("Veryfing contract...");
-}
+	
+	try {
+		await run("verify:verify", {
+			address: contractAddress,
+			contractArguments: args
+		});
+	} catch (e) {
+		if (e.message.toLowerCase().includes("already verified")){
+			console.log("Already verified!");
+		} else {
+			console.log(e);
+		};
+	};
+};
 
 main()
 	.then(() => process.exit(0))
