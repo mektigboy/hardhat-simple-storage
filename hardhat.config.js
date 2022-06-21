@@ -7,7 +7,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
   for (const account of accounts) {
     console.log(account.address);
-  }
+  };
 });
 
 const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL;
