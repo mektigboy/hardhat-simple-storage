@@ -23,6 +23,11 @@ module.exports = {
             accounts: [PRIVATE_KEY],
             chainId: 4,
         },
+        localhost: {
+          url: RINKEBY_RPC_URL,
+          accounts: [PRIVATE_KEY],
+          chainId: 4,
+      },
     },
     solidity: "0.8.15",
     etherscan: {
